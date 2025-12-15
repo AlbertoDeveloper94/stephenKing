@@ -93,3 +93,96 @@ main, .wrapper {
         width: 45%;
     }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== FONDO GENERAL ===== */
+body {
+  background-color: #0B0B0B; /* Negro Profundo */
+  color: #C9C9C9;           /* Gris Claro Ceniza */
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== TÍTULO ===== */
+h1 {
+  margin: 40px 0 20px;
+  color: #F2F2F2; /* Blanco Hueso */
+  letter-spacing: 1px;
+}
+
+/* ===== CONTENEDOR CENTRADO ===== */
+.table-container {
+  width: 90%;
+  max-width: 1200px;
+  background-color: #141414; /* Negro Carbón */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* ===== TABLA ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* ===== ENCABEZADOS ===== */
+thead {
+  background-color: #1E1E1E; /* Gris Oscuro Antracita */
+}
+
+th {
+  padding: 12px;
+  text-align: left;
+  color: #F2F2F2;
+  font-weight: 600;
+  border-bottom: 2px solid #2A2A2A;
+}
+
+/* ===== CELDAS ===== */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #2A2A2A;
+  color: #C9C9C9;
+}
+
+/* ===== FILAS ===== */
+tbody tr {
+  background-color: #141414;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #1E1E1E;
+}
+
+/* ===== ENFASIS EN TÍTULO ===== */
+td:nth-child(3) {
+  color: #B11212; /* Rojo Sangre */
+  font-weight: 500;
+}
+
+/* ===== TEXTO SECUNDARIO ===== */
+td:nth-child(1),
+td:nth-child(2),
+td:nth-child(5) {
+  color: #8A8A8A; /* Gris Medio */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  .table-container {
+    padding: 10px;
+  }
+}
