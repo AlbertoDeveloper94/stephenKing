@@ -3,7 +3,7 @@ const requestURL = https://stephen-king-api.onrender.com/api/shorts;
 function createDataCard({image, title, type, handle, descriptoriginallyPublishedIn, collectedIn, notes, year, created_at, villains }) {
     return `
         <div class="card" style="width: 18rem;">
-            <img src="${image}" class="card-img-top" alt="Imagen del vino">
+            <img src="${image}" class="card-img-top" alt="Imagen del libro">
             <div class="card-body">
                 <h3 class="card-title">${title}</h3>
                 <h4 class="card-title">${type} - ${handle} </h4>
