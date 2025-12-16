@@ -1,6 +1,7 @@
 .footer {
     background-color: #141414;
     color: #ffffff;
+    font-family: "creepster";
 }
 
 .footer-title {
@@ -10,6 +11,7 @@
     margin-bottom: 1.5rem;
     position: relative;
     transition: text-shadow 0.3s ease;
+    font-family: "Creepster";
 }
 
 .footer-title:hover {
@@ -30,6 +32,7 @@
 .footer-links {
     list-style: none;
     padding: 0;
+    font-family: "Cinzel", serif;
 }
 
 .footer-links li {
