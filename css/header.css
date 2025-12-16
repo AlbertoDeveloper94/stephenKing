@@ -33,3 +33,14 @@ h1 {
 .nav-link:hover {
   background-color: red;
 }
+@media (min-width: 992px) {
+  .nav-link {
+    transition: all 0.5s ease-in;
+  }
+  .nav-link:hover {
+    text-shadow: 0px 0px 5px#811212, 0px 0px 10px var(--colorSecondary),
+      0px 0px 15px var(--colorSecondary), 0px 0px 20px var(--colorSecondary),
+      0px 0px 30px var(--colorSecondary);
+    background: none;
+  }
+}
