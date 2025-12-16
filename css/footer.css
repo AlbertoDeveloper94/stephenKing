@@ -3,7 +3,9 @@
     color: #ffffff;
     font-family: "creepster";
 }
-
+p,li{
+    font-family: "Cinzel", ;
+}
 .footer-title {
     color: #fff;
     text-shadow: 1px 1px 4px #7A0C0C;
@@ -40,7 +42,8 @@
 }
 
 .footer-links a {
-    color: #8a8a8a;
+    color: #7A0C0C;
+    transition: text-shadow 0.3s ease;
     text-decoration: none;
     transition: all 0.3s ease;
 }
