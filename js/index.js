@@ -3,16 +3,15 @@ const API_URL = "https://stephen-king-api.onrender.com/api/books";
 
 
 
-function createData({image, Title, Year, Publisher, ISBN, Pages,Notes, created_at}) {
+function createData({image, Title, Year, Publisher, ISBN}) {
     return `
         <div class="card" style="width: 18rem;">
             <img src="${image}" class="card-img-top" alt="Imagen del libro">
             <div class="card-body">
                 <h4 class="card-title">${Title}</h4>
                 <h5 class="card-title">${Year}</h5>
-                <h5 class="card-text">${Publisher} — ${ISBN}</h5>
-                <p class="card-text">
-                    ${Notes} — ${Pages} — ${created_at}</p>
+                <h5 class="card-text">${Publisher}</h5>
+                <h5 class="card-text">${ISBN}</h5>
             </div>
         </div>
     `;
