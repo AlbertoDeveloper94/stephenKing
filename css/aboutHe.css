@@ -9,13 +9,16 @@ body {
     background-image: url(/images/fondoRojoTerror.png);
     min-height: 100vh;
     align-items: center;
-    padding: 20px;
+    margin: 0%;
+    padding: 0%;
+    
 }
 
 main {
     display: flex;
     justify-content: center;
     padding: 40px 0;
+    
 }
 .title{
     font-family: 'Creepster', cursive;
@@ -30,12 +33,12 @@ main {
     overflow: hidden;
     max-height: 600px;
     max-width: 800px;
-    width: 500%;
+    width: 100%;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    background-image: url(/images/fondoRojoTerror.png)
+    background-color: #000000;
 
 }
 
@@ -95,15 +98,24 @@ main {
 .card-title {
     font-size: 24px;
     font-weight: 700;
-    color: #666;
+    color: #8B0000;
     margin-bottom: 12px;
     line-height: 1.3;
     font-family: 'Cinzel', serif;
+    transition: all 0.3s ease;          /* ← Añade transición suave */
+    cursor: pointer; 
 }
-
+.card-title:hover {
+    text-shadow: 0 0 15px #ff0000,
+                 0 0 30px #ff0000,
+                 0 0 45px #ff0000,
+                 0 0 60px #8B0000;
+    color: #ff0000;
+    transform: scale(1.05);              /* ← Agranda ligeramente */
+}
 .card-description {
     font-size: 15px;
-    color: #667eea;
+    color: #f1f1f1;
     line-height: 1.6;
     margin-bottom: 20px;
 }
