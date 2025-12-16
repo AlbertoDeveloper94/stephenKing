@@ -108,10 +108,9 @@ padding: 0;
 box-sizing: border-box;
 }
 
-/* ===== FONDO GENERAL ===== */
 body {
-    background-color: #0B0B0B; /* Negro Profundo */
-    color: #C9C9C9;           /* Gris Claro Ceniza */
+    background-color: #0B0B0B;
+    color: #C9C9C9;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     display: flex;
@@ -119,12 +118,19 @@ body {
     align-items: center;
 }
 
-/* ===== TÍTULO ===== */
 h1 {
-    margin: 40px 0 20px;
-    color: #F2F2F2; /* Blanco Hueso */
-    letter-spacing: 1px;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: Cinzel;
+    font-size: 2rem;
+    color: #6A0F1A;
+    z-index: 10;
+    display: inline-block;
+    background:rgba(231, 222, 215, 0.7);
+    padding: 10px 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(3px);
 }
 
 .table-container {
