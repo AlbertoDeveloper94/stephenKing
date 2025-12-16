@@ -1,1 +1,35 @@
+:root {
+  --colorPrimary: #fff;
+  --colorSecondary: #811212;
+  --colorBorder: #c9c9c9;
+  --background: #141414;
+}
 
+body {
+  color: var(--colorPrimary);
+  background-color: var(--background);
+}
+h1 {
+  color: var(--colorSecondary);
+  font-family: "Creepster";
+}
+.logoSize {
+  max-width: 60px;
+}
+.letterSpacing {
+  letter-spacing: 4px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid var(--colorBorder);
+}
+.navbar {
+  justify-content: space-around;
+}
+.nav-link {
+  font-family: "Cinzel";
+  font-weight: bold;
+}
+.nav-link:hover {
+  background-color: red;
+}
