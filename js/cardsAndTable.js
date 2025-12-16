@@ -1,4 +1,4 @@
-const requestURL = '../json/prueba.json';
+const requestURL = '../json/cardsAndTable.json';
 const API_URL = "https://stephen-king-api.onrender.com/api/books";
 
 
