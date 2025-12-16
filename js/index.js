@@ -41,7 +41,8 @@ async function displayData() {
 fetch(API_URL)
 .then(response => response.json())
 .then(result => {
-    const tableBody = document.querySelector("#booksTable tbody");
+
+const tableBody = document.querySelector("#booksTable tbody");
 
     result.data.forEach(book => {
     const row = document.createElement("tr");
@@ -50,12 +51,17 @@ fetch(API_URL)
         ? book.villains.map(v => v.name).join(", ")
         : "Sin villanos";
 
+    const Notes = book.Notes.length
+    ? book.Notes.join(", ")
+    : "Sin notas";
+
     row.innerHTML = `
         <td>${book.Year}</td>
         <td>${book.Title}</td>
         <td>${book.Publisher}</td>
         <td>${book.Pages}</td>
         <td>${villains}</td>
+        <td>${Notes}</td>
     `;
 
     tableBody.appendChild(row);

@@ -54,10 +54,18 @@ main, .wrapper {
     flex-wrap: wrap;
     justify-content: center;
 }
-.card-title, .card{
+.card {
     background-color: #B11212;
     color: #fffaf2;
-    font-family: sans-serif;
+    font-family: Creepster;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-text{
+    background-color: #B11212;
+    color: #fffaf2;
+    font-family: Cinzel;
     border-radius: 8px;
     text-align: center;
     margin-bottom: 30px;
@@ -115,12 +123,14 @@ h1 {
     margin: 40px 0 20px;
     color: #F2F2F2; /* Blanco Hueso */
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .table-container {
-    width: 90%;
-    max-width: 1200px;
-    background-color: #141414; /* Negro Carbón */
+    width: 100%;
+    max-width: 850px;
+    margin:0 auto;
+    background-color: #141414; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
@@ -131,56 +141,54 @@ table {
     border-collapse: collapse;
 }
 
-/* ===== ENCABEZADOS ===== */
+
 thead {
-  background-color: #1E1E1E; /* Gris Oscuro Antracita */
+    background-color: #1E1E1E;
 }
 
 th {
-  padding: 12px;
-  text-align: left;
-  color: #F2F2F2;
-  font-weight: 600;
-  border-bottom: 2px solid #2A2A2A;
+    padding: 12px;
+    text-align: left;
+    color: #F2F2F2;
+    font-weight: 600;
+    border-bottom: 2px solid #2A2A2A;
 }
 
 /* ===== CELDAS ===== */
 td {
-  padding: 10px;
-  border-bottom: 1px solid #2A2A2A;
-  color: #C9C9C9;
+    color: #F2F2F2;
+    font-weight: 600;
+    border-bottom: 2px solid #2A2A2A;
 }
 
 /* ===== FILAS ===== */
 tbody tr {
-  background-color: #141414;
-  transition: background-color 0.2s ease;
+    background-color: #141414;
+    transition: background-color 0.2s ease;
 }
 
 tbody tr:hover {
-  background-color: #1E1E1E;
+    background-color: #1E1E1E;
 }
 
 /* ===== ENFASIS EN TÍTULO ===== */
 td:nth-child(3) {
   color: #B11212; /* Rojo Sangre */
-  font-weight: 500;
+    font-weight: 500;
 }
 
-/* ===== TEXTO SECUNDARIO ===== */
 td:nth-child(1),
 td:nth-child(2),
 td:nth-child(5) {
-  color: #8A8A8A; /* Gris Medio */
+color: #8A8A8A;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  table {
+table {
     font-size: 14px;
-  }
+}
 
-  .table-container {
+.table-container {
     padding: 10px;
-  }
+}
 }
