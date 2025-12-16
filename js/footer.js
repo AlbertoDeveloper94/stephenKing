@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/footer.css">
-    <title>Stephen King</title>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet" />
+class MyFooter extends HTMLElement {
+connectedCallback() {
+    this.innerHTML = `
 
 
-
-</head>
-
-<body>
-    <my-footer>>
+    
     <footer class="footer pt-5">
         <div class="container">
             <div class="row g-4">
@@ -91,15 +78,10 @@
             </div>
         </div>
     </footer>
-    </my-footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="/js/footer.js"></script>
-
-
-</body>
-
-</html>
+    
+    
+    
+    `;
+    }
+}
+customElements.define("footer-stephen-king", MyFooter);
