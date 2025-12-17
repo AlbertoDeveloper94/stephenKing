@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(/images/fondoRojoTerror.png);
+    background-image: url(/images/aboutHe/fondoRojoTerror.png);
     background-color: #300303;
     min-height: 100vh;
     margin: 0;
@@ -59,7 +59,7 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    background-image: url(/images/fondoRojoTerror.png);
+    background-image: url(/images/aboutHe/fondoRojoTerror.png);
 }
 
 .card:hover {
@@ -73,7 +73,7 @@ main {
     object-fit: contain;
     display: block;
     flex-shrink: 0;
-    background-image: url(/images/photoIt.jpg);
+    background-image: url(/images/aboutHe/photoIt.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -99,7 +99,7 @@ main {
 }
 
 .card-content::-webkit-scrollbar-thumb:hover {
-    background: #667eea;
+    background: #8B0000;
 }
 
 .card-title {
@@ -138,7 +138,7 @@ main {
 
 .card-meta-item::before {
     content: '•';
-    color: #667eea;
+    color: #8B0000;
     font-weight: bold;
 }
 
@@ -208,3 +208,39 @@ main {
 
 
 
+header-stephen-king {
+    display: block;              /* OBLIGATORIO */
+    width: 100%;
+    height: 100px;               /* O lo que necesites */
+    background-color: negro;
+    background-size: cover;
+    background-position: center;
+    position: fixed;             /* Si lo quieres fijo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.video-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    background: rgba(165, 29, 29, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    .video-overlay span {
+    color: white;
+    text-decoration: #8B0000;
+}
+
+}
+
+.video-wrapper:hover .video-overlay {
+    opacity: 1;
+}
+.video-overlay span {
+    pointer-events: none;
+}

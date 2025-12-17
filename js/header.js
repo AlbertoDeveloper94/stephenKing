@@ -3,7 +3,7 @@ class MyHeader extends HTMLElement {
     this.innerHTML = `
 
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top borderBottom p-4">
+      <nav class="navbar navbar-expand-lg fixed-top bg-dark">
         <div class="container-fluid">
           <div class="d-flex align-items-center justify-content-center col-6">
             <a href="" class="navbar-brand">
