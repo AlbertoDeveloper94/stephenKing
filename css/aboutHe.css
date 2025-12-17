@@ -40,8 +40,8 @@ main {
     aspect-ratio: 1/1;
     object-fit: contain;
     border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+    
+    
 }
 
 .divider:hover {
@@ -151,22 +151,17 @@ main {
 
 
 .book-card {
-    margin-left: 120px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 125px;
     width: 100%;
     max-width: 220px;
-    height: auto;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: url(/images/aboutHe/fondoRojoTerror.png);
 }
 
-.book-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
-    transform: scale(1.05)
-}
 
 .video-wrapper {
     position: relative;
@@ -182,7 +177,7 @@ main {
     bottom: 10px;
     right: 10px;
     background-color: #8B0000;
-    color: #fff;
+    color: #080000;
     padding: 8px 12px;
     border-radius: 6px;
     text-decoration: none;
@@ -218,7 +213,7 @@ main {
 
     .divider,
     .card,
-    .bookVideo {
+    .book-card {
         max-width: 600px;
     }
 
@@ -256,21 +251,8 @@ header-stephen-king {
 }
 
 
-.video-overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    background: rgba(165, 29, 29, 0.2);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    .video-overlay span {
-    color: white;
-    text-decoration: #8B0000;
-}
 
-}
+
 
 .video-wrapper:hover .video-overlay {
     opacity: 1;
@@ -278,3 +260,4 @@ header-stephen-king {
 .video-overlay span {
     pointer-events: none;
 }
+
