@@ -2,7 +2,7 @@
   --colorPrimary: #fff;
   --colorSecondary: #811212;
   --colorBorder: #c9c9c9;
-  --background: #141414;
+  --background: #141414 ;
 }
 
 body {
@@ -43,4 +43,10 @@ h1 {
       0px 0px 30px var(--colorSecondary);
     background: none;
   }
+}
+
+
+header-stephen-king {
+  display: block;
+  background-color: inherit
 }
