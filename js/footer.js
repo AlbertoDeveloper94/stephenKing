@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/footer.css">
-    <title>Stephen King</title>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet" />
+class MyFooter extends HTMLElement {
+connectedCallback() {
+    this.innerHTML = `
 
 
-
-</head>
-
-<body>
-    <my-footer>>
+    
     <footer class="footer pt-5">
         <div class="container">
             <div class="row g-4">
@@ -41,7 +28,7 @@
                 <div class="col-lg-2 col-md-6">
                     <h3 class="footer-title">Enlaces rápidos</h3>
                     <ul class="footer-links">
-                        <li><a href="pages/aboutHe.html">Sobre Stephen King</a></li>
+                        <li><a href="#">Sobre Stephen King</a></li>
                         <li><a href="https://www.amazon.es/stephen-king-merchandising/s?k=stephen+king+merchandising">Productos</a></li>
                         <li><a href="https://stephenking.com.ar/">Blog</a></li>
                     </ul>
@@ -77,6 +64,9 @@
         </div>
 
 
+        
+
+
         <div class="footer-bottom mt-5">
             <div class="container">
                 <div class="row py-3">
@@ -90,15 +80,10 @@
             </div>
         </div>
     </footer>
-    </my-footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="/js/footer.js"></script>
-
-
-</body>
-
-</html>
+    
+    
+    
+    `;
+    }
+}
+customElements.define("footer-stephen-king", MyFooter);
