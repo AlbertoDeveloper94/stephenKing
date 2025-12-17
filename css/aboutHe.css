@@ -150,22 +150,56 @@ main {
 }
 
 
-.bookVideo {
-    position: relative;
-    max-width: 350px;
+.book-card {
+    margin-left: 120px;
     width: 100%;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-}
-
-.bookVideo video {
-    width: 100%;
+    max-width: 250px;
     height: auto;
     aspect-ratio: 1/1;
     object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    transform: scale(1.05)
+}
+
+.video-wrapper {
+    position: relative;
+}
+
+.video-wrapper video {
+    width: 100%;
     display: block;
 }
+
+.video-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #8B0000;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.video-overlay:hover {
+    background-color: #8B0000;
+}
+
+
+
+
+
+
+
 
 
 @media (max-width: 1400px) {
