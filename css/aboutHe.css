@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(/images/fondoRojoTerror.png);
-    background-color: #1a0000;
+    background-color: #300303;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -37,6 +37,8 @@ main {
     width: 100%;
     max-width: 350px;
     height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
     border-radius: 15px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
@@ -160,6 +162,8 @@ main {
 .bookVideo video {
     width: 100%;
     height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
     display: block;
 }
 
