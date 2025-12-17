@@ -1,45 +1,63 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(/images/fondoRojoTerror.png);
+    background-color: #1a0000;
     min-height: 100vh;
-    align-items: center;
-    margin: 0%;
-    padding: 0%;
-    
+    margin: 0;
+    padding: 0;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
-    
-}
-.title{
+.title {
     font-family: 'Creepster', cursive;
     text-align: center;
     color: white;
-    margin-bottom: 20px;
+    margin: 20px 0;
     font-size: 48px;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+
+.image-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.divider {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.divider:hover {
+    transform: scale(1.05);
+}
+
+
 .card {
     background: white;
     border-radius: 20px;
     overflow: hidden;
-    max-height: 600px;
-    max-width: 800px;
+    max-height: 700px;
     width: 100%;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    background-color: #000000;
-
+    background-image: url(/images/fondoRojoTerror.png);
 }
 
 .card:hover {
@@ -49,13 +67,13 @@ main {
 
 .card-image {
     width: 100%;
-    height: 400px;
+    height: 350px;
     object-fit: contain;
     display: block;
     flex-shrink: 0;
     background-image: url(/images/photoIt.jpg);
-    background-repeat: no-repeat;      
-    background-size: cover;             
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card-content {
@@ -82,85 +100,24 @@ main {
     background: #667eea;
 }
 
-.card-badge {
-    display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 12px;
-}
-
 .card-title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     color: #8B0000;
     margin-bottom: 12px;
     line-height: 1.3;
     font-family: 'Cinzel', serif;
-    transition: all 0.3s ease;          /* ← Añade transición suave */
-    cursor: pointer; 
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
 .card-title:hover {
     text-shadow: 0 0 15px #ff0000,
-                 0 0 30px #ff0000,
-                 0 0 45px #ff0000,
-                 0 0 60px #8B0000;
+        0 0 30px #ff0000,
+        0 0 45px #ff0000,
+        0 0 60px #8B0000;
     color: #ff0000;
-    transform: scale(1.05);              /* ← Agranda ligeramente */
-}
-.card-description {
-    font-size: 15px;
-    color: #f1f1f1;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-}
-
-.card-price {
-    font-size: 28px;
-    font-weight: 700;
-    color: #667eea;
-}
-
-.card-price span {
-    font-size: 16px;
-    color: #999;
-    font-weight: 400;
-}
-
-.card-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    padding: 12px 28px;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.card-button:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-}
-
-.card-button:active {
-    transform: scale(0.98);
 }
 
 .card-meta {
@@ -183,9 +140,58 @@ main {
     font-weight: bold;
 }
 
-@media (max-width: 480px) {
+.card-description {
+    font-size: 15px;
+    color: #f1f1f1;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.bookVideo {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.bookVideo video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@media (max-width: 1400px) {
+    main {
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .divider,
+    .card,
+    .bookVideo {
+        max-width: 600px;
+    }
+
     .card {
-        max-width: 100%;
+        max-height: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 32px;
     }
 
     .card-content {
@@ -193,15 +199,8 @@ main {
     }
 
     .card-title {
-        font-size: 20px;
+        font-size: 22px;
     }
 
-    .card-footer {
-        flex-direction: column;
-        gap: 15px;
-    }
 
-    .card-button {
-        width: 100%;
-    }
-}
+

@@ -28,10 +28,9 @@ connectedCallback() {
                 <div class="col-lg-2 col-md-6">
                     <h3 class="footer-title">Enlaces rápidos</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Sobre Stephen King</a></li>
+                        <li><a href="https://www.amazon.es/stephen-king-merchandising/s?k=stephen+king+merchandising">Productos</a></li>
                         <li><a href="https://stephenking.com.ar/">Blog</a></li>
-                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
 
@@ -63,6 +62,9 @@ connectedCallback() {
                 </div>
             </div>
         </div>
+
+
+        
 
 
         <div class="footer-bottom mt-5">
