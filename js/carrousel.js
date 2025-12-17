@@ -36,4 +36,22 @@ const banner = document.querySelector("#bannerStephenKing");
           banner.style.opacity = 1;
         }, 1000);
       }
-      
+       const navigation = document.querySelector("#navigation");
+      const carrusel = document.querySelector("#carrusel");
+
+      function calculateHeightMenu() {
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        if(viewportWidth<=768){
+          carrusel.style.height="auto";
+        }
+        if(viewportWidth>768){
+          let heightNav = navigation.offsetHeight;
+          carrusel.style.height = viewportHeight - heightNav + "px";
+        }
+        
+      }
+
+      window.addEventListener("resize", calculateHeightMenu);
+      calculateHeightMenu();
