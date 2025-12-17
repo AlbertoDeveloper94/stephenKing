@@ -3,8 +3,8 @@
     color: #ffffff;
     font-family: "creepster";
 }
-p,li{
-    font-family: "Cinzel", ;
+.footer p, .footer li {
+    font-family: "Cinzel",serif ;
 }
 .footer-title {
     color: #fff;
