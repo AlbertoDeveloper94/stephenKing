@@ -1,8 +1,8 @@
 const banner = document.querySelector("#bannerStephenKing");
       const videoPlayer = document.querySelector("#video");
       const videosSrc = [
-        { src: "itMovie.mp4", poster: "itPoster.jpg" },
-        { src: "largaMarchaMovie.mp4", poster: "longWalkPoster.jpg" },
+        { src: "../videos/itMovie.mp4", poster: "../images/carrousel/itPoster.jpg" },
+        { src: "../videos/largaMarchaMovie.mp4", poster: "../images/carrousel/longWalkPoster.jpg" },
       ];
       const prevButton = document.querySelector("#buttonPrev");
       const nextButton = document.querySelector("#buttonNext");
