@@ -42,3 +42,15 @@ transition: opacity 1s;
 #buttonNext {
   right: 30px;
 }
+
+@media (min-width: 768px) {
+  #carrusel{
+    width: 50%;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  
+  .buttonControlSlide i {
+    font-size: 30px;
+  }
+}
