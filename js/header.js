@@ -8,7 +8,7 @@ class MyHeader extends HTMLElement {
           <div class="d-flex align-items-center justify-content-center col-6">
             <a href="" class="navbar-brand">
               <img
-                src="images/logo/StephenKingLogo.png"
+                src="/stephenKing/images/logo/StephenKingLogo.png"
                 alt=""
                 class="logoSize"
               />
@@ -28,7 +28,7 @@ class MyHeader extends HTMLElement {
           >
             <ul class="navbar-nav d-flex justify-content-around w-100">
               <li class="nav-item text-center">
-                <a href="" class="nav-link text-white">Autor</a>
+                <a href="pages/aboutHe.html" class="nav-link text-white">Autor</a>
               </li>
             </ul>
           </div>

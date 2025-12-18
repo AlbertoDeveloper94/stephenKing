@@ -33,7 +33,7 @@ main {
 }
 
 .divider {
-  width: 100%;
+  width: 350px;
   max-width: 350px;
   height: auto;
   aspect-ratio: 1/1;
@@ -147,14 +147,12 @@ main {
   background: white;
   border-radius: 15px;
   overflow: hidden;
-  margin-left: 125px;
   width: 100%;
   max-width: 220px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-image: url(../images/aboutHe/fondoRojoTerror.png);
 }
-
 .video-wrapper {
   position: relative;
 }
@@ -222,7 +220,7 @@ main {
     display: block; /* OBLIGATORIO */
     width: 100%;
     height: 100px; /* O lo que necesites */
-    background-color: negro;
+    background-color: black;
     background-size: cover;
     background-position: center;
     position: fixed; /* Si lo quieres fijo */
