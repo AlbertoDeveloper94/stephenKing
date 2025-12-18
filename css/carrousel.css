@@ -1,8 +1,4 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
+
 video{
     width: 100%;
 }
@@ -60,7 +56,7 @@ transition: opacity 1s;
 @media (min-width: 992px) {
   
   #video {
-      
+      width: 70%;
      background-color: black;
   }
   .buttonControlSlide i {
