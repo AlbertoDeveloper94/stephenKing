@@ -1,0 +1,71 @@
+video {
+  width: 100%;
+}
+
+#bannerStephenKing {
+  background-image: url("../backgroundpage1.png");
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#carrusel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+#video {
+  display: block;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.buttonControlSlide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+#buttonPrev {
+  left: 30px;
+}
+
+#buttonNext {
+  right: 30px;
+}
+
+@media (min-width: 768px) {
+  #carrusel {
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  #video {
+    border-radius: 20px;
+  }
+
+  .buttonControlSlide i {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  #video {
+    width: 70%;
+    background-color: black;
+  }
+
+  .buttonControlSlide i {
+    font-size: 50px;
+  }
+}
