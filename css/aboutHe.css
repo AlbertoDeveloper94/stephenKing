@@ -35,7 +35,7 @@ main {
 .divider {
   width: 350px;
   height: 350px;
-
+background-color: #000;
   object-fit: cover;
   object-position: center;
 
@@ -160,7 +160,8 @@ main {
 }
 
 .book-card {
-  background: white;
+  padding: 30px;
+  background: rgb(7, 7, 7);
   border-radius: 15px;
   overflow: hidden;
   margin-left: 125px;
