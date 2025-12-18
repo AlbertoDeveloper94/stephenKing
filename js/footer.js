@@ -12,13 +12,13 @@ connectedCallback() {
                     <p class="mb-4">Stephen King el "Maestro del Terror",cuyas novelas han redifinido el género.</p>
                     <div class="social-links mb-4">
                         <a href="https://www.facebook.com/todostephenking?locale=es_ES" target="_blank">
-                            <img src="/images/aboutHe/logoFaceBook.png" alt="Facebook" class="social-img">
+                            <img src="/stephenKing/images/aboutHe/logoFaceBook.png" alt="Facebook" class="social-img">
                         </a>
                         <a href="https://www.instagram.com/stephenking/" target="_blank">
-                            <img src="/images/aboutHe/InstagramIcon.png" alt="Instagram" class="social-img">
+                            <img src="/stephenKing/images/aboutHe/InstagramIcon.png" alt="Instagram" class="social-img">
                         </a>
                         <a href="https://www.linkedin.com/in/stephen-king-a393a3188/" target="_blank">
-                            <img src="/images/aboutHe/linkedin.png" alt="Linkedin" class="social-img">
+                            <img src="/stephenKing/images/aboutHe/linkedin.png" alt="Linkedin" class="social-img">
                         </a>
                     </div>
 
