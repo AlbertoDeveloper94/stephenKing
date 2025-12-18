@@ -3,11 +3,15 @@ class MyHeader extends HTMLElement {
     this.innerHTML = `
 
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+      <nav id="navigation" class="navbar navbar-expand-lg borderBottom p-4">
         <div class="container-fluid">
           <div class="d-flex align-items-center justify-content-center col-6">
             <a href="" class="navbar-brand">
-              <img src="../images/logo/StephenKingLogo.png" alt="" class="logoSize" />
+              <img
+                src="images/logo/StephenKingLogo.png"
+                alt=""
+                class="logoSize"
+              />
             </a>
             <h1 class="letterSpacing ms-4">STEPHEN KING</h1>
           </div>
@@ -24,16 +28,7 @@ class MyHeader extends HTMLElement {
           >
             <ul class="navbar-nav d-flex justify-content-around w-100">
               <li class="nav-item text-center">
-                <a href="" class="nav-link text-white">Titulo 1</a>
-              </li>
-              <li class="nav-item text-center">
-                <a href="" class="nav-link text-white">Titulo 2</a>
-              </li>
-              <li class="nav-item text-center">
-                <a href="" class="nav-link text-white">Titulo 3</a>
-              </li>
-              <li class="nav-item text-center">
-                <a href="" class="nav-link text-white">Titulo 4</a>
+                <a href="" class="nav-link text-white">Autor</a>
               </li>
             </ul>
           </div>

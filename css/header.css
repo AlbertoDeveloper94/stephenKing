@@ -39,16 +39,3 @@ nav{
       0px 0px 30px var(--colorSecondary);
     background: none;
   }
-}
-
-header-stephen-king {
-  display: block;
-  position: fixed; /* Fija el header en la parte superior */
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(20, 20, 20, 0.95); /* Semi-transparente para ver el fondo */
-  backdrop-filter: blur(10px); /* Efecto de desenfoque del fondo */
-  z-index: 1000; /* Asegura que esté por encima de todo */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
-}
