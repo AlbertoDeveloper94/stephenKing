@@ -28,7 +28,7 @@ class MyHeader extends HTMLElement {
           >
             <ul class="navbar-nav d-flex justify-content-around w-100">
               <li class="nav-item text-center">
-                <a href="" class="nav-link text-white">Autor</a>
+                <a href="pages/aboutHe.html" class="nav-link text-white">Autor</a>
               </li>
             </ul>
           </div>

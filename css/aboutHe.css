@@ -33,13 +33,25 @@ main {
 }
 
 .divider {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  aspect-ratio: 1/1;
-  object-fit: contain;
+  width: 350px;
+  height: 350px;
+
+  object-fit: cover;
+  object-position: center;
+
   border-radius: 15px;
+  display: block;
+
+  flex-shrink: 0;      /* 🔒 NO se encoge */
+  align-self: flex-start;
+
+  position: sticky;   /* 🔥 SE QUEDA FIJA AL HACER SCROLL */
+  top: 20px;
+
+  transition: transform 0.3s ease;
+  object-fit: contain;
 }
+
 
 .divider:hover {
   transform: scale(1.05);
@@ -49,13 +61,18 @@ main {
   background: white;
   border-radius: 20px;
   overflow: hidden;
-  max-height: 700px;
+  height: 700px; /* ALTURA FIJA en lugar de max-height */
   width: 100%;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   background-image: url(../images/aboutHe/fondoRojoTerror.png);
+  background-size: cover; /* FONDO FIJO */
+  background-position: center; /* FONDO FIJO */
+  background-repeat: no-repeat; /* FONDO FIJO */
+  background-attachment: scroll; 
+   object-fit: contain;
 }
 
 .card:hover {
@@ -66,18 +83,17 @@ main {
 .card-image {
   width: 100%;
   height: 350px;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
   flex-shrink: 0;
-  background-image: url(../images/aboutHe/photoIt.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  
 }
 
 .card-content {
   padding: 25px;
   overflow-y: auto;
   flex: 1;
+  background: transparent; /* Para que se vea el fondo de la card */
 }
 
 .card-content::-webkit-scrollbar {
@@ -148,19 +164,27 @@ main {
   border-radius: 15px;
   overflow: hidden;
   margin-left: 125px;
-  width: 100%;
-  max-width: 220px;
+  width: 220px; /* ANCHO FIJO */
+  height: 350px; /* ALTURA FIJA igual que las divider */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-image: url(../images/aboutHe/fondoRojoTerror.png);
+  background-color: #000;
+  background-size: cover; /* FONDO FIJO */
+  background-position: center; /* FONDO FIJO */
+  background-repeat: no-repeat;
+  flex-shrink: 0; /* FONDO FIJO */
 }
 
 .video-wrapper {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .video-wrapper video {
   width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para que llene el contenedor */
   display: block;
 }
 
@@ -178,7 +202,7 @@ main {
 }
 
 .video-overlay:hover {
-  background-color: #8b0000;
+  background-color: #a00000;
 }
 
 @media (max-width: 1400px) {
@@ -202,7 +226,7 @@ main {
   }
 
   .card {
-    max-height: 600px;
+    height: 600px; /* Mantener altura fija en móvil */
   }
 }
 
@@ -218,14 +242,15 @@ main {
   .card-title {
     font-size: 22px;
   }
+
   header-stephen-king {
-    display: block; /* OBLIGATORIO */
+    display: block;
     width: 100%;
-    height: 100px; /* O lo que necesites */
-    background-color: negro;
+    height: 100px;
+    background-color: #000;
     background-size: cover;
     background-position: center;
-    position: fixed; /* Si lo quieres fijo */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -234,6 +259,7 @@ main {
   .video-wrapper:hover .video-overlay {
     opacity: 1;
   }
+
   .video-overlay span {
     pointer-events: none;
   }
