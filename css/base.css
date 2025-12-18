@@ -1,0 +1,22 @@
+:root {
+  --colorPrimary: #fff;
+  --colorSecondary: #811212;
+  --colorBorder: #c9c9c9;
+  --background: #141414;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../images/background/backgroundpage1.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--colorPrimary);
+}
+
+h1 {
+  color: var(--colorSecondary);
+  font-family: "Creepster";
+}
