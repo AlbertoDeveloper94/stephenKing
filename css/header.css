@@ -8,7 +8,6 @@
 body {
   color: var(--colorPrimary);
   background-color: var(--background);
-  padding-top: 100px; /* Espacio para el header fijo - ajusta según necesites */
 }
 
 h1 {
