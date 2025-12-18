@@ -38,10 +38,10 @@ connectedCallback() {
                 <div class="col-lg-2 col-md-6">
                     <h3 class="footer-title">Soporte Técnico</h3>
                     <ul class="footer-links">
-                        <li><a href="/pdf/avisoLegal.pdf" target="_blank">Aviso Legal</a></li>
-                        <li><a href="/pdf/politicaPrivacidadDatos.pdf" target="_blank">Política de Privacidad</a></li>
-                        <li><a href="/pdf/condicionesGeneralesVenta.pdf" target="_blank">Política de Ventas</a></li>
-                        <li><a href="/pdf/politicaCookies(3).pdf" target="_blank">Política de Cookies</a></li>
+                        <li><a href="/stephenKing/pdf/avisoLegal.pdf" target="_blank">Aviso Legal</a></li>
+                        <li><a href="/stephenKing/pdf/politicaPrivacidadDatos.pdf" target="_blank">Política de Privacidad</a></li>
+                        <li><a href="/stephenKing/pdf/condicionesGeneralesVenta.pdf" target="_blank">Política de Ventas</a></li>
+                        <li><a href="/stephenKing/pdf/politicaCookies(3).pdf" target="_blank">Política de Cookies</a></li>
                     </ul>
                 </div>
 
