@@ -74,7 +74,7 @@ connectedCallback() {
                         <h6 class="mb-0">&copy; 2025 Stephen King. Todos los derechos reservados.</h6>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <img src="/images/logoStephenKingSinBordes.png" alt="Logo Stephe King" class="social-img">
+                        <img src="/images/aboutHe/logoStephenKingSinBordes.png" alt="Logo Stephen King" class="social-img">
                     </div>
                 </div>
             </div>
