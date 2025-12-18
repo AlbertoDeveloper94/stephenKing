@@ -31,4 +31,4 @@ Proyecto frontend que muestra información de libros de Stephen King mediante ta
 ```bash
 
 
-Abrir: http
+Abrir: https://albertodeveloper94.github.io/stephenKing/index.html

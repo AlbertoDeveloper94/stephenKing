@@ -34,7 +34,6 @@ function controlSlide() {
 
     videoPlayer.src = videosSrc[currentIndex].src;
     videoPlayer.style.opacity = 1;
-    banner.style.opacity = 1;
   }, 1000);
 }
 const navigation = document.querySelector("#navigation");
