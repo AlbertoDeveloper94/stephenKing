@@ -6,7 +6,7 @@ class MyHeader extends HTMLElement {
       <nav id="navigation" class="navbar navbar-expand-lg borderBottom p-4">
         <div class="container-fluid">
           <div class="d-flex align-items-center justify-content-center col-6">
-            <a href="" class="navbar-brand">
+            <a href="/stephenKing/index.html" class="navbar-brand">
               <img
                 src="/stephenKing/images/logo/StephenKingLogo.png"
                 alt=""
