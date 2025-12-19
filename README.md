@@ -27,11 +27,26 @@ Proyecto frontend que muestra información de libros de Stephen King mediante ta
 - Datos por defecto: `json/cardsAndTable.json` actúa como fuente local para evitar depender de un backend durante desarrollo.
 - Imágenes: guarda portadas y recursos visuales en `images/bookCovers` y subcarpetas relacionadas.
 
-**Cómo ejecutar el proyecto **
+**Cómo ejecutar el proyecto**
 
 1. Servir solo frontend (sin backend)
 
+Para ver el proyecto en vivo, clica en el siguiente enlace:
+
+ [Stephen King - Pagina de inicio](https://albertodeveloper94.github.io/stephenKing/index.html)
+
+
+**Instalación del proyecto**
+
+1. Clona el repositorio:
+
 ```bash
+git clone https://github.com/albertodeveloper94/stephenKing.git
+```
+2. Cambia al directorio:
 
+```bash
+cd stephenKing
+```
 
-Abrir: https://albertodeveloper94.github.io/stephenKing/index.html
+Ejecuta index.html en tu navegador.
