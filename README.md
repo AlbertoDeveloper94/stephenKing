@@ -1,6 +1,6 @@
 # stephenKing — Descripción del proyecto y estructura
 
-![Captura de pantalla banner del index.html](/StephenKing/images/readme/screenshotIndex.png)
+![Captura de pantalla banner del index.html](images/readme/screenshotIndex.png)
 
 Proyecto frontend que muestra información de libros de Stephen King mediante tarjetas responsives. El repositorio contiene HTML, CSS, JS y datos JSON; incluyendo documentación de la API en `docs/API_README.md`.
 
